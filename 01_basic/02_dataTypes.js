@@ -17,3 +17,4 @@ console.log(typeof undefined);
 console.log(typeof 566);
 
 
+//tyrsysry
