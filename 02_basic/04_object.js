@@ -47,13 +47,41 @@ const user=[
 }]
 
 //console.log(user[0].email)
-console.log(tinderUser);
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('123abc'));
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
+
+// console.log(tinderUser.hasOwnProperty('123abc'));
 
 
 
+const course= {
+    name:"js in hindi",
+    price:999,
+    courseTeacher:"Hitesh"
+}
 
+const {courseTeacher:master}= course
+// console.log(courseTeacher);
+console.log(master);
+
+// {
+//     name:"hitesh",
+//     courseName:"js in hindi",
+//     price:999
+// }
+
+// https://api.github.com/users/hiteshchoudhary
+
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
+
+//   https://randomuser.me/api/
+
+//https://jsonformatter.org/
