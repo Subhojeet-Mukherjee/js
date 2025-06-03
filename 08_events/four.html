@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+</head>
+<body>
+    <h1> JavaScript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    
+</body>
+<script>
+
+    const fun=function(str){
+        console.log(Date.now(),str);       
+    }
+    let inter;
+     document.querySelector("#start").addEventListener("click",()=>{
+        if(!inter){
+             inter = setInterval(fun,1000,"Hi");
+
+     }},false)
+
+     document.querySelector("#stop").addEventListener("click",()=>{
+                     clearInterval(inter)  
+                     inter=null
+    },false) 
+
+</script>
+</html>
