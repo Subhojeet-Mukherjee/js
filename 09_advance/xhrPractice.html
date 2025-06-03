@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+    <div class="div">Soniya</div>
+    
+</body>
+<script>
+    const xhr=new XMLHttpRequest()
+    const url="https://catfact.ninja/fact"
+    xhr.open("GET",url)
+    xhr.send()
+    xhr.onreadystatechange = function(){
+        if(xhr.readyState===4){
+        const data= JSON.parse(this.responseText)
+        document.querySelector("div").innerHTML= ` Today's cat fact is : ${data.fact}`     
+    }}
+ 
+</script>
+</html>
